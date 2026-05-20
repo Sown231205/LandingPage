@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Plast Interior | Nội Thất Nhựa Cao Cấp Sang Trọng</title>
+  <meta
+    name="description"
+    content="Eco Plast Interior cung cấp nội thất nhựa cao cấp chống nước, chống mối mọt, bền đẹp và hiện đại cho tủ bếp, tủ áo và không gian sống tinh tế."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: "#F9FAFB",
+            charcoal: "#1F2937",
+            sand: "#C89B6D",
+            sage: "#7A9B76",
+            pearl: "#EEF1F4"
+          },
+          fontFamily: {
+            display: ["Cormorant Garamond", "Times New Roman", "serif"],
+            sans: ["Be Vietnam Pro", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 24px 60px rgba(15, 23, 42, 0.10)",
+            card: "0 16px 40px rgba(15, 23, 42, 0.08)"
+          },
+          keyframes: {
+            pulseRing: {
+              "0%": { transform: "scale(0.95)", opacity: "0.6" },
+              "70%": { transform: "scale(1.45)", opacity: "0" },
+              "100%": { transform: "scale(1.45)", opacity: "0" }
+            },
+            floatUp: {
+              "0%, 100%": { transform: "translateY(0)" },
+              "50%": { transform: "translateY(-7px)" }
+            }
+          },
+          animation: {
+            pulseRing: "pulseRing 2s ease-out infinite",
+            floatUp: "floatUp 4s ease-in-out infinite"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(200, 155, 109, 0.18), transparent 24%),
+        radial-gradient(circle at right center, rgba(122, 155, 118, 0.12), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, #f9fafb 44%, #f3f4f6 100%);
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .grid-sheen {
+      background-image:
+        linear-gradient(rgba(31, 41, 55, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 41, 55, 0.045) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    .fade-mask {
+      mask-image: linear-gradient(180deg, black 78%, transparent 100%);
+    }
+
+    .font-display {
+      font-kerning: normal;
+      font-variant-ligatures: common-ligatures;
+    }
+  </style>
+</head>
+<body class="font-sans text-charcoal antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-charcoal text-sm font-bold text-white shadow-lg shadow-charcoal/20">EP</div>
+        <div>
+          <p class="font-display text-lg tracking-wide">Eco Plast Interior</p>
+          <p class="text-[11px] uppercase tracking-[0.32em] text-charcoal/50">Nội thất nhựa cao cấp</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
+        <a href="#home" class="transition hover:text-sage">Trang chủ</a>
+        <a href="#products" class="transition hover:text-sage">Sản phẩm</a>
+        <a href="#colors" class="transition hover:text-sage">Bảng màu</a>
+        <a href="#reviews" class="transition hover:text-sage">Đánh giá</a>
+        <a href="#contact" class="transition hover:text-sage">Liên hệ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="#contact"
+          class="hidden rounded-full border border-charcoal/10 bg-charcoal px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sage sm:inline-flex"
+        >
+          Nhận Báo Giá
+        </a>
+        <button
+          id="menuToggle"
+          type="button"
+          class="inline-flex rounded-full border border-charcoal/10 p-3 text-charcoal lg:hidden"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-charcoal/10 bg-white/95 lg:hidden">
+      <nav class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-sm font-medium sm:px-6">
+        <a href="#home" class="rounded-2xl px-4 py-3 transition hover:bg-sage/10">Trang chủ</a>
+        <a href="#products" class="rounded-2xl px-4 py-3 transition hover:bg-sage/10">Sản phẩm</a>
+        <a href="#colors" class="rounded-2xl px-4 py-3 transition hover:bg-sage/10">Bảng màu</a>
+        <a href="#reviews" class="rounded-2xl px-4 py-3 transition hover:bg-sage/10">Đánh giá</a>
+        <a href="#contact" class="rounded-2xl px-4 py-3 transition hover:bg-sage/10">Liên hệ</a>
+        <a href="#contact" class="mt-2 inline-flex justify-center rounded-full bg-charcoal px-5 py-3 font-semibold text-white">Nhận Báo Giá</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="grid-sheen relative overflow-hidden">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 py-16 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-24">
+        <div class="relative z-10">
+          <div class="mb-6 inline-flex rounded-full border border-sand/30 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sage shadow-sm">
+            Chống nước, bền đẹp, sang trọng
+          </div>
+          <h1 class="max-w-3xl font-display text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+            Không gian sống hiện đại với nội thất nhựa cao cấp mang thẩm mỹ tinh tuyển.
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-charcoal/70 sm:text-lg">
+            Eco Plast Interior mang đến giải pháp tủ bếp, tủ quần áo và hệ lưu trữ cao cấp với độ bền vượt trội, bề mặt đẹp sang và khả năng thích nghi lý tưởng với khí hậu nóng ẩm.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-charcoal px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sage"
+            >
+              Nhận Tư Vấn Thiết Kế
+            </a>
+            <a
+              href="#colors"
+              class="inline-flex items-center justify-center rounded-full border border-charcoal/10 bg-white/80 px-7 py-4 text-sm font-semibold text-charcoal transition hover:-translate-y-0.5 hover:border-sage hover:text-sage"
+            >
+              Xem Bảng Màu Thực Tế
+            </a>
+          </div>
+
+          <div class="mt-12 grid gap-5 sm:grid-cols-3">
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-card">
+              <p class="text-3xl font-display">100%</p>
+              <p class="mt-2 text-sm text-charcoal/60">Chống nước, phù hợp bếp và khu vực ẩm</p>
+            </div>
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-card">
+              <p class="text-3xl font-display">15+</p>
+              <p class="mt-2 text-sm text-charcoal/60">Năm kinh nghiệm ứng dụng nội thất nhựa</p>
+            </div>
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-card">
+              <p class="text-3xl font-display">4.9/5</p>
+              <p class="mt-2 text-sm text-charcoal/60">Khách hàng đánh giá cao về độ bền và thẩm mỹ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -right-10 top-12 h-32 w-32 rounded-full bg-sand/20 blur-3xl"></div>
+          <div class="absolute -left-8 bottom-4 h-40 w-40 rounded-full bg-sage/20 blur-3xl"></div>
+          <div class="glass-panel relative overflow-hidden rounded-[2rem] border border-white/70 p-4 shadow-soft sm:p-6">
+            <div class="overflow-hidden rounded-[1.7rem] bg-[#f0ece7]">
+              <img
+                src="AnhThat/AnhMau3.jpg"
+                alt="Không gian bếp nội thất nhựa cao cấp Eco Plast Interior"
+                class="h-full min-h-[420px] w-full object-cover"
+              />
+            </div>
+            <div class="absolute inset-x-8 bottom-8 rounded-[1.6rem] border border-white/20 bg-charcoal/70 p-5 text-white backdrop-blur-md">
+              <p class="text-xs uppercase tracking-[0.35em] text-white/60">Bộ sưu tập nổi bật</p>
+              <h2 class="mt-3 font-display text-2xl sm:text-3xl">Thiết kế tinh giản, bề mặt đẹp, cảm giác cao cấp trong từng chi tiết.</h2>
+              <p class="mt-3 text-sm leading-7 text-white/80">
+                Dễ vệ sinh, ít cong vênh, phù hợp cho căn hộ, nhà phố và công trình cần giải pháp hoàn thiện bền lâu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.32em] text-sage">Điểm khác biệt</p>
+        <h2 class="mt-4 font-display text-3xl sm:text-4xl">Vì sao nhiều gia chủ chọn Eco Plast Interior</h2>
+        <p class="mt-4 text-base leading-8 text-charcoal/65">
+          Không chỉ bền chắc, nội thất nhựa cao cấp còn mang lại vẻ đẹp hiện đại, sạch sẽ và hiệu quả sử dụng lâu dài.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-50 text-sky-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M7 16a4 4 0 118 0M7 16h10a2 2 0 002-2 5 5 0 00-5-5H9a4 4 0 00-4 4 3 3 0 003 3z" />
+            </svg>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold">100% Chống Nước</h3>
+          <p class="mt-3 text-sm leading-7 text-charcoal/65">
+            Bền vững trong môi trường ẩm, rất phù hợp cho tủ bếp, tủ lavabo và các khu vực cần vệ sinh thường xuyên.
+          </p>
+        </article>
+
+        <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50 text-amber-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold">Chống Mối Mọt</h3>
+          <p class="mt-3 text-sm leading-7 text-charcoal/65">
+            Khắc phục nhược điểm của vật liệu gỗ truyền thống, giúp hệ tủ ổn định và giảm chi phí bảo trì dài hạn.
+          </p>
+        </article>
+
+        <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-50 text-rose-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 3c2.8 2.4 5 5.8 5 9a5 5 0 11-10 0c0-3.2 2.2-6.6 5-9z" />
+            </svg>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold">Chậm Cháy An Toàn</h3>
+          <p class="mt-3 text-sm leading-7 text-charcoal/65">
+            Hỗ trợ nâng chuẩn an toàn và chất lượng công trình, phù hợp cho không gian sống hiện đại và gọn gàng.
+          </p>
+        </article>
+
+        <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 21c4.97-1.1 8-5.48 8-10.5V5l-8-2-8 2v5.5C4 15.52 7.03 19.9 12 21z" />
+            </svg>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold">Vật Liệu Xanh</h3>
+          <p class="mt-3 text-sm leading-7 text-charcoal/65">
+            Dễ vệ sinh, vận hành ổn định và phù hợp với xu hướng sống hiện đại ưu tiên sự sạch sẽ và bền vững.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="bg-white/70 py-16 lg:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-sage">Mẫu sản phẩm</p>
+          <h2 class="mt-4 font-display text-3xl sm:text-4xl">Những không gian được ưa chuộng nhất</h2>
+          <p class="mt-4 text-base leading-8 text-charcoal/65">
+            Từ tủ bếp, tủ áo đến hệ tủ trang trí, chúng tôi định hình thẩm mỹ theo phong cách tinh giản nhưng vẫn đủ chiều sâu sang trọng.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="overflow-hidden rounded-[1.8rem] border border-white bg-white shadow-card">
+            <img
+              src="AnhThat/GoSang.jpg"
+              alt="Mẫu bề mặt gỗ sồi sáng cho hệ tủ hiện đại"
+              class="h-72 w-full object-cover"
+            />
+            <div class="p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sage">Gỗ sồi sáng</p>
+              <h3 class="mt-3 text-xl font-semibold">Thanh lịch, sáng thoáng và dễ phối nội thất</h3>
+              <p class="mt-3 text-sm leading-7 text-charcoal/65">Tông gỗ sáng giúp hệ tủ trông nhẹ nhàng hơn, phù hợp với căn hộ hiện đại, bếp sáng màu và không gian cần cảm giác rộng rãi.</p>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-[1.8rem] border border-white bg-white shadow-card">
+            <img
+              src="AnhThat/MauTrangTron.jpg"
+              alt="Mẫu bề mặt trắng bóng cho hệ tủ hiện đại"
+              class="h-72 w-full object-cover"
+            />
+            <div class="p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sage">Trắng bóng hiện đại</p>
+              <h3 class="mt-3 text-xl font-semibold">Sạch sáng, tinh gọn và chuẩn phong cách tối giản</h3>
+              <p class="mt-3 text-sm leading-7 text-charcoal/65">Bề mặt trắng bóng tạo cảm giác ngăn nắp, sạch sẽ và rất hợp với khu bếp hoặc hệ lưu trữ cần vẻ hiện đại rõ ràng.</p>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-[1.8rem] border border-white bg-white shadow-card">
+            <img
+              src="AnhThat/AnhMau.jpg"
+              alt="Mẫu bề mặt vân gỗ đậm cho hệ tủ cao cấp"
+              class="h-72 w-full object-cover"
+            />
+            <div class="p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sage">Vân gỗ đậm</p>
+              <h3 class="mt-3 text-xl font-semibold">Ấm sang, chắc chắn và tạo chiều sâu nổi bật</h3>
+              <p class="mt-3 text-sm leading-7 text-charcoal/65">Phù hợp với phòng ngủ, hệ tủ áo hoặc mảng lưu trữ cần cảm giác cao cấp, sang trọng và có điểm nhấn rõ ràng.</p>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-[1.8rem] border border-white bg-white shadow-card">
+            <img
+              src="AnhThat/MauXam.jpg"
+              alt="Mẫu bề mặt xám sang trọng cho hệ tủ hiện đại"
+              class="h-72 w-full object-cover"
+            />
+            <div class="p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sage">Xám sang trọng</p>
+              <h3 class="mt-3 text-xl font-semibold">Trung tính hiện đại cho phong cách đương đại</h3>
+              <p class="mt-3 text-sm leading-7 text-charcoal/65">Gam xám mang đến vẻ tinh tế, mạnh mẽ và gọn gàng, phù hợp với gia chủ yêu thích không gian hiện đại có chiều sâu.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="colors" class="py-16 lg:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+        <div class="relative">
+          <div class="absolute -left-6 top-6 h-24 w-24 rounded-full bg-sage/15 blur-3xl"></div>
+          <div class="glass-panel relative overflow-hidden rounded-[2rem] border border-white/70 p-4 shadow-soft sm:p-6">
+            <div class="overflow-hidden rounded-[1.7rem] bg-pearl">
+              <img
+                id="showcaseImage"
+                src="AnhThat/AnhMau4.jpg"
+                alt="Mẫu bề mặt xám sang trọng cho hệ tủ hiện đại"
+                class="fade-mask h-[530px] w-full object-cover transition duration-500"
+              />
+            </div>
+            <div class="absolute inset-x-8 bottom-8 rounded-[1.5rem] border border-white/20 bg-charcoal/74 p-5 text-white backdrop-blur-md">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.35em] text-white/60">Xem trước không gian</p>
+                  <h3 id="showcaseTitle" class="mt-3 font-display text-3xl">Xám Sang Trọng</h3>
+                </div>
+                <span id="showcaseBadge" class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Trầm hiện đại</span>
+              </div>
+              <p id="showcaseDescription" class="mt-4 max-w-lg text-sm leading-7 text-white/82">
+                Gam xám trung tính tạo cảm giác hiện đại, sắc sảo và gọn gàng, phù hợp với không gian bếp hoặc hệ tủ theo phong cách sang tối giản.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-sage">Bảng màu tương tác</p>
+          <h2 class="mt-4 font-display text-3xl sm:text-4xl">Chọn Màu Sắc Không Gian Của Bạn</h2>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-charcoal/68">
+            Chạm vào từng bề mặt để xem nhanh phong cách không gian. Chúng tôi đã giữ lại 4 lựa chọn được yêu thích nhất để bạn so sánh dễ hơn và ra quyết định nhanh hơn.
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <button
+              type="button"
+              class="swatch-btn rounded-[1.5rem] border border-charcoal/10 bg-white p-4 text-left shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              data-name="Xám Sang Trọng"
+              data-badge="Trầm hiện đại"
+              data-description="Gam xám trung tính tạo cảm giác hiện đại, sắc sảo và gọn gàng, phù hợp với không gian bếp hoặc hệ tủ theo phong cách sang tối giản."
+              data-image="AnhThat/AnhMau4.jpg"
+              data-alt="Mẫu bề mặt xám sang trọng cho hệ tủ hiện đại"
+            >
+              <div class="flex items-center gap-4">
+                <span class="h-12 w-12 rounded-2xl border border-black/5 bg-[linear-gradient(135deg,#4a4f56,#6f7680,#9ea6ae)]"></span>
+                <div>
+                  <p class="font-semibold">Xám Sang Trọng</p>
+                  <p class="mt-1 text-sm text-charcoal/55">Tinh tế, trung tính, hợp phong cách hiện đại</p>
+                </div>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="swatch-btn rounded-[1.5rem] border border-charcoal/10 bg-white p-4 text-left shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              data-name="Gỗ Sồi Sáng"
+              data-badge="Thoáng sáng"
+              data-description="Gam gỗ sồi sáng giúp không gian nhẹ nhàng và rộng mắt hơn, phù hợp với căn hộ hiện đại, bếp sáng màu và hệ tủ cần sự thanh lịch."
+              data-image="AnhThat/GoSang.jpg"
+              data-alt="Mẫu bề mặt gỗ sồi sáng cho hệ tủ hiện đại"
+            >
+              <div class="flex items-center gap-4">
+                <span class="h-12 w-12 rounded-2xl border border-black/5 bg-[linear-gradient(135deg,#b18d62,#d3bc98,#efe2ca)]"></span>
+                <div>
+                  <p class="font-semibold">Gỗ Sồi Sáng</p>
+                  <p class="mt-1 text-sm text-charcoal/55">Thanh lịch, dễ phối, phù hợp căn hộ sáng màu</p>
+                </div>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="swatch-btn rounded-[1.5rem] border border-charcoal/10 bg-white p-4 text-left shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              data-name="Trắng Bóng Hiện Đại"
+              data-badge="Tinh gọn"
+              data-description="Bề mặt trắng bóng mang lại cảm giác sạch sẽ, sáng sủa và ngăn nắp, đặc biệt phù hợp với tủ bếp và hệ lưu trữ theo phong cách tối giản."
+              data-image="AnhThat/MauTrangTron.jpg"
+              data-alt="Mẫu bề mặt trắng bóng hiện đại cho hệ tủ"
+            >
+              <div class="flex items-center gap-4">
+                <span class="h-12 w-12 rounded-2xl border border-black/5 bg-[linear-gradient(135deg,#ffffff,#eceff3,#d7dce4)]"></span>
+                <div>
+                  <p class="font-semibold">Trắng Bóng Hiện Đại</p>
+                  <p class="mt-1 text-sm text-charcoal/55">Sáng, sạch, tối giản chuẩn không gian hiện đại</p>
+                </div>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="swatch-btn rounded-[1.5rem] border border-charcoal/10 bg-white p-4 text-left shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+              data-name="Đen Sang Trọng"
+              data-badge="Trầm sang"
+              data-description="Tông đen tạo điểm nhấn mạnh mẽ và cao cấp, phù hợp với gia chủ yêu thích không gian cá tính, hiện đại và có chiều sâu rõ rệt."
+              data-image="AnhThat/AnhMau2.jpg"
+              data-alt="Mẫu bề mặt đen sang trọng cho hệ tủ hiện đại"
+            >
+              <div class="flex items-center gap-4">
+                <span class="h-12 w-12 rounded-2xl border border-black/5 bg-[linear-gradient(135deg,#181818,#2c2c2c,#4f4f4f)]"></span>
+                <div>
+                  <p class="font-semibold">Đen Sang Trọng</p>
+                  <p class="mt-1 text-sm text-charcoal/55">Mạnh mẽ, cá tính, tạo chiều sâu cho không gian</p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="mt-8 rounded-[1.6rem] border border-charcoal/10 bg-white p-5 shadow-card">
+            <p class="text-sm font-semibold text-charcoal">Gợi ý nhanh</p>
+            <p class="mt-2 text-sm leading-7 text-charcoal/65">
+              Nếu bạn muốn tông trung tính hiện đại: chọn <strong>Xám Sang Trọng</strong>. Nếu muốn không gian sáng và dễ phối: chọn <strong>Gỗ Sồi Sáng</strong>. Nếu thích bề mặt sạch sáng, tối giản: chọn <strong>Trắng Bóng Hiện Đại</strong>. Nếu muốn tạo điểm nhấn mạnh và cao cấp: chọn <strong>Đen Sang Trọng</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="bg-white/70 py-16 lg:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.32em] text-sage">Khách hàng nói gì</p>
+          <h2 class="mt-4 font-display text-3xl sm:text-4xl">Đánh giá thực tế từ các gia chủ đã thi công</h2>
+          <p class="mt-4 text-base leading-8 text-charcoal/65">
+            Những phản hồi này phản ánh điều khách hàng quan tâm nhất: đẹp, bền, dễ vệ sinh và đúng tinh thần không gian mong muốn.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card">
+            <div class="flex items-center gap-1 text-sand">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="mt-5 text-sm leading-8 text-charcoal/70">
+              “Tôi chọn tủ bếp nhựa vì sợ ẩm mốc và cong vênh. Sau khi hoàn thiện, bề mặt nhìn rất sang, lau chùi cực dễ và dùng rất yên tâm.”
+            </p>
+            <div class="mt-6">
+              <p class="font-semibold">Chị Ngọc Anh</p>
+              <p class="text-sm text-charcoal/50">Căn hộ cao cấp</p>
+            </div>
+          </article>
+
+          <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card">
+            <div class="flex items-center gap-1 text-sand">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="mt-5 text-sm leading-8 text-charcoal/70">
+              “Đội ngũ tư vấn phối màu rất kỹ. Tôi chọn xám luxury cho hệ tủ, lên thực tế đẹp hơn mong đợi và nhìn cực kỳ gọn gàng.”
+            </p>
+            <div class="mt-6">
+              <p class="font-semibold">Anh Minh Khang</p>
+              <p class="text-sm text-charcoal/50">Nhà phố</p>
+            </div>
+          </article>
+
+          <article class="rounded-[1.8rem] border border-white bg-white p-7 shadow-card">
+            <div class="flex items-center gap-1 text-sand">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="mt-5 text-sm leading-8 text-charcoal/70">
+              “Mình thích nhất là cảm giác sạch và sáng của trắng bóng. Phần thi công chỉn chu, đường nét đẹp và rất hợp với căn bếp nhỏ.”
+            </p>
+            <div class="mt-6">
+              <p class="font-semibold">Chị Thảo Vy</p>
+              <p class="text-sm text-charcoal/50">Chung cư</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-soft">
+        <div class="grid lg:grid-cols-[0.92fr_1.08fr]">
+          <div class="bg-gradient-to-br from-charcoal via-charcoal to-sage p-8 text-white sm:p-10">
+            <p class="text-sm uppercase tracking-[0.32em] text-white/60">Liên hệ tư vấn</p>
+            <h2 class="mt-4 font-display text-3xl leading-tight sm:text-4xl">Nhận giải pháp phù hợp cho từng không gian sống.</h2>
+            <p class="mt-5 text-sm leading-7 text-white/78">
+              Eco Plast Interior sẽ hỗ trợ bạn lựa chọn mẫu tủ, phong cách hoàn thiện và phương án triển khai phù hợp với nhu cầu thực tế.
+            </p>
+
+            <div class="mt-8 space-y-4 text-sm text-white/82">
+              <div class="flex items-center gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.9 1.37l1.06 3.17a2 2 0 01-.45 2.11l-1.64 1.64a16 16 0 006.03 6.03l1.64-1.64a2 2 0 012.11-.45l3.17 1.06A2 2 0 0121 15.72V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z" />
+                  </svg>
+                </span>
+                <span>Khảo sát nhu cầu, tư vấn vật liệu và đề xuất bảng màu phù hợp.</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2m10-3H7a2 2 0 00-2 2v3h14V7a2 2 0 00-2-2z" />
+                  </svg>
+                </span>
+                <span>Báo giá nhanh, định hướng thiết kế rõ ràng và tối ưu ngân sách thi công.</span>
+              </div>
+            </div>
+
+            <div class="mt-8 rounded-[1.5rem] border border-white/10 bg-white/10 p-5">
+              <p class="text-sm font-semibold">Khung giờ hỗ trợ</p>
+              <p class="mt-2 text-sm text-white/75">Thứ 2 - Thứ 7: 8:00 - 18:00</p>
+              <p class="mt-1 text-sm text-white/75">Tư vấn online qua Zalo, trang Facebook và điện thoại trực tiếp.</p>
+            </div>
+
+          </div>
+
+          <div class="bg-ivory p-8 sm:p-10">
+            <div class="mx-auto flex h-full max-w-xl flex-col justify-center">
+              <p class="text-sm font-semibold uppercase tracking-[0.32em] text-sage">Kênh liên hệ nhanh</p>
+              <h3 class="mt-4 font-display text-3xl text-charcoal sm:text-4xl">Chọn kênh liên hệ thuận tiện nhất cho bạn</h3>
+              <p class="mt-4 text-sm leading-8 text-charcoal/68">
+                Kết nối trực tiếp với Eco Plast Interior qua Facebook, Zalo hoặc gọi điện ngay để được tư vấn nhanh về mẫu tủ, màu sắc và báo giá.
+              </p>
+
+              <div class="mt-8 grid gap-4">
+                <a
+                  href="https://www.facebook.com/ecoplastinterior"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="group flex items-center justify-between rounded-[1.6rem] bg-[linear-gradient(135deg,#1877F2_0%,#3297FF_60%,#69B7FF_100%)] px-6 py-5 text-white shadow-lg shadow-blue-300/30 transition duration-300 hover:-translate-y-1"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.2c0-.87.25-1.46 1.49-1.46H16.4V5.05c-.26-.03-1.14-.11-2.16-.11-2.14 0-3.61 1.31-3.61 3.72V11H8.2v3h2.43v7h2.87z"/>
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-base font-semibold">Facebook</p>
+                      <p class="mt-1 text-sm text-white/85">Nhắn tin qua trang Facebook để nhận tư vấn nhanh.</p>
+                    </div>
+                  </div>
+                  <span class="text-sm font-semibold text-white/90 transition group-hover:translate-x-1">Mở</span>
+                </a>
+
+                <a
+                  href="https://zalo.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="group flex items-center justify-between rounded-[1.6rem] bg-[#0068FF] px-6 py-5 text-white shadow-lg shadow-blue-300/30 transition duration-300 hover:-translate-y-1"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-sm font-black tracking-wide">
+                      Zalo
+                    </span>
+                    <div>
+                      <p class="text-base font-semibold">Zalo</p>
+                      <p class="mt-1 text-sm text-white/85">Trao đổi nhanh mẫu mã, hình ảnh và báo giá qua Zalo.</p>
+                    </div>
+                  </div>
+                  <span class="text-sm font-semibold text-white/90 transition group-hover:translate-x-1">Mở</span>
+                </a>
+
+                <a
+                  href="tel:0900000000"
+                  class="group flex items-center justify-between rounded-[1.6rem] bg-emerald-500 px-6 py-5 text-white shadow-lg shadow-emerald-300/30 transition duration-300 hover:-translate-y-1"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.9 1.37l1.06 3.17a2 2 0 01-.45 2.11l-1.64 1.64a16 16 0 006.03 6.03l1.64-1.64a2 2 0 012.11-.45l3.17 1.06A2 2 0 0121 15.72V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-base font-semibold">Điện thoại</p>
+                      <p class="mt-1 text-sm text-white/85">Gọi trực tiếp để được hỗ trợ ngay khi cần tư vấn gấp.</p>
+                    </div>
+                  </div>
+                  <span class="text-sm font-semibold text-white/90 transition group-hover:translate-x-1">Gọi</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-charcoal/10 bg-white/90">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.1fr_0.7fr_0.7fr_0.9fr] lg:px-8">
+      <div>
+        <a href="#home" class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-charcoal text-sm font-bold text-white">EP</div>
+          <div>
+            <p class="font-display text-lg tracking-wide text-charcoal">Eco Plast Interior</p>
+            <p class="text-[11px] uppercase tracking-[0.32em] text-charcoal/45">Nội thất nhựa cao cấp</p>
+          </div>
+        </a>
+        <p class="mt-5 max-w-md text-sm leading-7 text-charcoal/65">
+          Chúng tôi theo đuổi những không gian sống vừa đẹp mắt vừa bền bỉ, nơi nội thất không chỉ là đồ dùng mà còn là chất lượng sống mỗi ngày.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://zalo.me/" target="_blank" rel="noreferrer" class="rounded-full border border-charcoal/10 px-4 py-2 text-sm transition hover:border-sage hover:text-sage">Zalo</a>
+          <a href="https://www.facebook.com/ecoplastinterior" target="_blank" rel="noreferrer" class="rounded-full border border-charcoal/10 px-4 py-2 text-sm transition hover:border-sage hover:text-sage">Facebook</a>
+          <a href="tel:0900000000" class="rounded-full border border-charcoal/10 px-5 py-2 text-sm transition hover:border-sage hover:text-sage">0900 000 000</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.28em] text-charcoal/50">Khám phá</p>
+        <ul class="mt-5 space-y-3 text-sm text-charcoal/65">
+          <li><a href="#products" class="transition hover:text-sage">Mẫu sản phẩm nổi bật</a></li>
+          <li><a href="#colors" class="transition hover:text-sage">Bảng màu hoàn thiện</a></li>
+          <li><a href="#reviews" class="transition hover:text-sage">Đánh giá khách hàng</a></li>
+          <li><a href="#contact" class="transition hover:text-sage">Đăng ký tư vấn</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.28em] text-charcoal/50">Dịch vụ</p>
+        <ul class="mt-5 space-y-3 text-sm text-charcoal/65">
+          <li>Tư vấn phối màu theo không gian</li>
+          <li>Thiết kế hệ tủ theo nhu cầu</li>
+          <li>Báo giá và đề xuất vật liệu</li>
+          <li>Hỗ trợ chăm sóc sau thi công</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.28em] text-charcoal/50">Thông tin liên hệ</p>
+        <div class="mt-5 space-y-3 text-sm leading-7 text-charcoal/65">
+          <p>Hotline: <a href="tel:0900000000" class="transition hover:text-sage">0900 000 000</a></p>
+          <p>Zalo: <a href="https://zalo.me/" target="_blank" rel="noreferrer" class="transition hover:text-sage">zalo.me</a></p>
+          <p>Facebook: <a href="https://www.facebook.com/ecoplastinterior" target="_blank" rel="noreferrer" class="transition hover:text-sage">facebook.com/ecoplastinterior</a></p>
+          <p>Email: hello@ecoplastinterior.vn</p>
+          <p>Phòng trưng bày: 123 Nguyễn Văn A, TP. HCM</p>
+          <p>Giờ làm việc: 8:00 - 18:00, Thứ 2 - Thứ 7</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-charcoal/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm text-charcoal/55 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>© 2026 Eco Plast Interior. Bản quyền thuộc về thương hiệu.</p>
+        <div class="flex flex-wrap gap-5">
+          <a href="#home" class="transition hover:text-sage">Trang chủ</a>
+          <a href="#products" class="transition hover:text-sage">Sản phẩm</a>
+          <a href="#contact" class="transition hover:text-sage">Nhận báo giá</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuLinks = mobileMenu.querySelectorAll("a");
+
+    menuToggle.addEventListener("click", () => {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const swatches = document.querySelectorAll(".swatch-btn");
+    const showcaseImage = document.getElementById("showcaseImage");
+    const showcaseTitle = document.getElementById("showcaseTitle");
+    const showcaseBadge = document.getElementById("showcaseBadge");
+    const showcaseDescription = document.getElementById("showcaseDescription");
+
+    function setActiveSwatch(button) {
+      swatches.forEach((swatch) => {
+        swatch.classList.remove("ring-2", "ring-sage", "border-sage", "bg-sage/5");
+      });
+
+      button.classList.add("ring-2", "ring-sage", "border-sage", "bg-sage/5");
+      showcaseTitle.textContent = button.dataset.name;
+      showcaseBadge.textContent = button.dataset.badge;
+      showcaseDescription.textContent = button.dataset.description;
+      showcaseImage.src = button.dataset.image;
+      showcaseImage.alt = button.dataset.alt;
+    }
+
+    swatches.forEach((button) => {
+      button.addEventListener("click", () => setActiveSwatch(button));
+    });
+
+    if (swatches.length > 0) {
+      setActiveSwatch(swatches[0]);
+    }
+  </script>
+</body>
+</html>
